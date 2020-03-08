@@ -15,7 +15,7 @@ public class SpawnManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        spawnRangeZ = GameObject.Find("Border").transform.position.z;
+        spawnRangeZ = GameObject.Find("ZBorder").transform.position.z;
 
         InvokeRepeating("SpawnObstacles", startDelay, spawnInterval);
 
