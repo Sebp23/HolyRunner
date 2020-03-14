@@ -7,8 +7,8 @@ public class SpawnManager : MonoBehaviour
     public GameObject[] obstaclePrefabs;
     private float spawnRangeZ;
 
-    private float startDelay = 2;
-    private float spawnInterval = 1.5f;
+    public float startDelay = 2;
+    public float spawnInterval = 1.5f;
     private float numberOfObstacles = 1;
     private CollisionTracker collisionTrackerScript;
 
