@@ -66,6 +66,7 @@
     <Compile Include="Assets\Scripts\CameraPosition.cs" />
     <Compile Include="Assets\Scripts\CollisionTracker.cs" />
     <Compile Include="Assets\Scripts\DestroyOffscreen.cs" />
+    <Compile Include="Assets\Scripts\IncreaseSpeed.cs" />
     <Compile Include="Assets\Scripts\ObstacleController.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\ScoreCamera.cs" />

@@ -120,6 +120,51 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &38887451
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 38887453}
+  - component: {fileID: 38887452}
+  m_Layer: 0
+  m_Name: IncreaseObstacleSpeed
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &38887452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 38887451}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d52c3befd5447c4a9a76ae157f1d730, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 15
+  addedSpeed: 0
+--- !u!4 &38887453
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 38887451}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 8, y: 23.8, z: -0.33}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &136323250
 GameObject:
   m_ObjectHideFlags: 0
@@ -797,6 +842,8 @@ MonoBehaviour:
   obstaclePrefabs:
   - {fileID: 3720868078095844328, guid: dede81e43650ba141b6ad0bbb75a7d79, type: 3}
   - {fileID: 1331990292984775379, guid: dd2e2e0cfa1a42e4c9550ac076041a9c, type: 3}
+  startDelay: 2
+  spawnInterval: 1.5
 --- !u!4 &760434278
 Transform:
   m_ObjectHideFlags: 0
@@ -2868,6 +2915,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8990648575143666702, guid: dede81e43650ba141b6ad0bbb75a7d79,
+        type: 3}
+      propertyPath: startSpeed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8990648575143666702, guid: dede81e43650ba141b6ad0bbb75a7d79,
+        type: 3}
+      propertyPath: addedSpeed
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dede81e43650ba141b6ad0bbb75a7d79, type: 3}
