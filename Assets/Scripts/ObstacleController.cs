@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class ObstacleController : MonoBehaviour
 {
+    public bool isFromRightSide;
+    public bool isFromTopSide;
+
     private CollisionTracker collisionTrackerScript;
     private IncreaseSpeed increaseSpeedScript;
 
@@ -19,14 +22,29 @@ public class ObstacleController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Go();
+        if (isFromRightSide)
+        {
+            GoFromRight();
+        }
+        if (isFromTopSide)
+        {
+            GoFromTop();
+        }
     }
 
-    public void Go()
+    public void GoFromRight()
     {
         if (collisionTrackerScript.gameOver == false)
         {
             transform.Translate(Vector3.left * Time.deltaTime * increaseSpeedScript.speed);
+        }
+    }
+    
+    public void GoFromTop()
+    {
+        if (collisionTrackerScript.gameOver == false)
+        {
+            transform.Translate(Vector3.back * Time.deltaTime * increaseSpeedScript.speed);
         }
     }
 }
