@@ -66,6 +66,8 @@
     <Compile Include="Assets\Scripts\CameraPosition.cs" />
     <Compile Include="Assets\Scripts\CollisionTracker.cs" />
     <Compile Include="Assets\Scripts\DestroyOffscreen.cs" />
+    <Compile Include="Assets\Scripts\GameOverController.cs" />
+    <Compile Include="Assets\Scripts\GameOverMouseHover.cs" />
     <Compile Include="Assets\Scripts\IncreaseSpeed.cs" />
     <Compile Include="Assets\Scripts\MainMenuController.cs" />
     <Compile Include="Assets\Scripts\MainMenuMouseHover.cs" />
