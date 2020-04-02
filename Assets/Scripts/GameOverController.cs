@@ -26,7 +26,8 @@ public class GameOverController : MonoBehaviour
         if (isPlayAgain)
         {
             //Actual Game level is scene 1
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene("Prototype");
+            SceneManager.SetActiveScene(SceneManager.GetSceneByName("Prototype"));
             Debug.Log("Scene Loaded!");
         }
         if (isCredits)
