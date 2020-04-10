@@ -3,11 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class GameOverController : MonoBehaviour
+public class TutorialController : MonoBehaviour
 {
-    public bool isPlayAgain;
+    public bool isStart;
     public bool isMainMenu;
-    public bool isCredits;
 
     // Start is called before the first frame update
     void Start()
@@ -23,22 +22,16 @@ public class GameOverController : MonoBehaviour
 
     private void OnMouseUp()
     {
-        if (isPlayAgain)
+        if (isStart)
         {
-            //Load Prototype scene (main game scene) if "Play Again" is clicked
+            //load the main game scene, "prototype" if the player clicks the "Start" button
             SceneManager.LoadScene("Prototype");
             SceneManager.SetActiveScene(SceneManager.GetSceneByName("Prototype"));
             Debug.Log("Scene Loaded!");
         }
-        if (isCredits)
-        {
-            //load credits scene if "Credits" is clicked
-            SceneManager.LoadScene(3);
-            Debug.Log("Scene Loaded!");
-        }
         if (isMainMenu)
         {
-            //Load MainMenu scene if "Main Menu" is clicked
+            //load the MainMenu scene if player clicks "Main Menu" button
             SceneManager.LoadScene("MainMenu");
             SceneManager.SetActiveScene(SceneManager.GetSceneByName("MainMenu"));
             Debug.Log("Scene Loaded!");

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameOverMouseHover : MonoBehaviour
+public class TutorialMouseHover : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()

@@ -15,9 +15,14 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //get the z-axis boundary position from the ZBorder object
         zRange = GameObject.Find("ZBorder").transform.position.z;
+
+        //get the negative and positive x-axis boundary position from the ZBorder object
         positiveXBorder = GameObject.Find("XBorder1").transform.position.x;
         negativeXBorder = GameObject.Find("XBorder2").transform.position.x;
+
+        //find the collision tracker script from the Player object so we can access that scripts methods from this script
         collisionTrackerScript = GameObject.Find("Player").GetComponent<CollisionTracker>();
     }
 

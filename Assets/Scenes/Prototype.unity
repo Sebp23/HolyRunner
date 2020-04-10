@@ -967,7 +967,6 @@ GameObject:
   - component: {fileID: 824177815}
   - component: {fileID: 824177814}
   - component: {fileID: 824177817}
-  - component: {fileID: 824177818}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1136,19 +1135,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &824177818
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 824177813}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d37b2c19bcfbd4a419a2b8f98b5da54b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  horizontalResolution: 1920
 --- !u!1 &885788699
 GameObject:
   m_ObjectHideFlags: 0
@@ -1539,6 +1525,36 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &972100013
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 972100014}
+  m_Layer: 0
+  m_Name: DestroyObstacleBorder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &972100014
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 972100013}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -10, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1024506430
 GameObject:
   m_ObjectHideFlags: 0
@@ -2710,6 +2726,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOver: 0
+  gameOverTimer: 2
   explosionSound: {fileID: 8300000, guid: 48e8c1d365e3fea4a8c53774c6f96a2e, type: 3}
 --- !u!54 &2122740564
 Rigidbody:
@@ -2912,7 +2929,7 @@ PrefabInstance:
     - target: {fileID: 6339562201078726702, guid: dede81e43650ba141b6ad0bbb75a7d79,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 13.6
+      value: 23.6
       objectReference: {fileID: 0}
     - target: {fileID: 6339562201078726702, guid: dede81e43650ba141b6ad0bbb75a7d79,
         type: 3}
@@ -2927,7 +2944,7 @@ PrefabInstance:
     - target: {fileID: 6339562201078726702, guid: dede81e43650ba141b6ad0bbb75a7d79,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 13.6
+      value: 23.6
       objectReference: {fileID: 0}
     - target: {fileID: 6339562201078726702, guid: dede81e43650ba141b6ad0bbb75a7d79,
         type: 3}
@@ -2942,7 +2959,7 @@ PrefabInstance:
     - target: {fileID: 6339562201078726702, guid: dede81e43650ba141b6ad0bbb75a7d79,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 13.6
+      value: 23.6
       objectReference: {fileID: 0}
     - target: {fileID: 6339562201078726702, guid: dede81e43650ba141b6ad0bbb75a7d79,
         type: 3}
@@ -3095,7 +3112,7 @@ PrefabInstance:
     - target: {fileID: 3722176977306846114, guid: dd2e2e0cfa1a42e4c9550ac076041a9c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 16.61
+      value: 27.6
       objectReference: {fileID: 0}
     - target: {fileID: 3722176977306846114, guid: dd2e2e0cfa1a42e4c9550ac076041a9c,
         type: 3}
