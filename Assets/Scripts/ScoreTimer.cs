@@ -21,6 +21,8 @@ public class ScoreTimer : MonoBehaviour
 
     private void AddSecond()
     {
+        //add to the score each second
+        //the score = amount of seconds survived
         timer += Time.deltaTime;
         int score = Mathf.RoundToInt(timer);
         scoreTime.text = ($"Score: {score.ToString()}");

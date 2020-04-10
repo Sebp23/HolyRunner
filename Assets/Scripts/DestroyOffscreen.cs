@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class DestroyOffscreen : MonoBehaviour
 {
-    private float playBound = -10;
+    private float playBound;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        //playBound equals the x position of the object DestroyObstacleBorder
+        playBound = GameObject.Find("DestroyObstacleBorder").transform.position.x;
     }
 
     // Update is called once per frame
@@ -17,6 +18,7 @@ public class DestroyOffscreen : MonoBehaviour
     {
         if (transform.position.x < playBound)
         {
+            //destroy the obstacle once it is off screen
             Destroy(gameObject);
         }
     }

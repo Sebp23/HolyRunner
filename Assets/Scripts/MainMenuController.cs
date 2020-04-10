@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class MainMenuController : MonoBehaviour
 {
     public bool isStart;
+    public bool isTutorial;
     public bool isQuit;
     public bool isCredits;
 
@@ -25,19 +26,27 @@ public class MainMenuController : MonoBehaviour
     {
         if (isStart)
         {
-            //Actual Game level is scene 1
+            //Load the main game scene (Prototype) if "Start" is clicked
             SceneManager.LoadScene("Prototype");
             SceneManager.SetActiveScene(SceneManager.GetSceneByName("Prototype"));
             Debug.Log("Scene Loaded!");
         }
+        if (isTutorial)
+        {
+            //Load the Tutorial scene if "How to Play" is clicked
+            SceneManager.LoadScene("Tutorial");
+            SceneManager.SetActiveScene(SceneManager.GetSceneByName("Tutorial"));
+            Debug.Log("Scene Loaded!");
+        }
         if (isCredits)
         {
-            //credits is scene 3
+            //load the credits scene of "Credits" is clicked
             SceneManager.LoadScene(3);
             Debug.Log("Scene Loaded!");
         }
         if (isQuit)
         {
+            //quit the application if "Quit" is clicked
             Application.Quit();
             Debug.Log("Scene Loaded!");
         }

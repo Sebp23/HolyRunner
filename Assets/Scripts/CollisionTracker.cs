@@ -16,6 +16,7 @@ public class CollisionTracker : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //get the audio component
         playerAudio = GetComponent<AudioSource>();
     }
 
@@ -27,20 +28,26 @@ public class CollisionTracker : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+        //check to see if the object tagged "Obstacle" is hit by the player
         if (collision.gameObject.CompareTag("Obstacle"))
         {
+            //play the explosion sound if the player hits an obstacle
             playerAudio.PlayOneShot(explosionSound, 1.0f);
 
+            //set game over to true
             gameOver = true;
             Debug.Log("Game Over!");
 
+            //execute the GameOver() method after 2 seconds (gameOverTimer value)
             Invoke("GameOver", gameOverTimer);
         }
     }
 
     private void GameOver()
     {
+        //load the GameOver scene
         SceneManager.LoadScene("GameOver");
+        //transition to the GameOver scene
         SceneManager.SetActiveScene(SceneManager.GetSceneByName("GameOver"));
     }
 }
