@@ -33,7 +33,8 @@ public class GameOverController : MonoBehaviour
         if (isCredits)
         {
             //load credits scene if "Credits" is clicked
-            SceneManager.LoadScene(3);
+            SceneManager.LoadScene("Credits");
+            SceneManager.SetActiveScene(SceneManager.GetSceneByName("Credits"));
             Debug.Log("Scene Loaded!");
         }
         if (isMainMenu)
