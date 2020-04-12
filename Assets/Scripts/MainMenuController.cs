@@ -41,7 +41,8 @@ public class MainMenuController : MonoBehaviour
         if (isCredits)
         {
             //load the credits scene of "Credits" is clicked
-            SceneManager.LoadScene(3);
+            SceneManager.LoadScene("Credits");
+            SceneManager.SetActiveScene(SceneManager.GetSceneByName("Credits"));
             Debug.Log("Scene Loaded!");
         }
         if (isQuit)
